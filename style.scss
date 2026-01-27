@@ -15,12 +15,17 @@ html {
 }
 
 body {
-    background-color: #1d1d1d;
+    background-color: #121212;
 }
 @mixin flex-center($gap:0rem){
     display: flex;
     flex-direction: column;
     gap:$gap;
+}
+@mixin new(){
+     display: flex;
+     flex-direction: row;
+    
 }
 @font-face {
     font-family: myfont1;
@@ -43,6 +48,7 @@ main{
     align-items: center;
     .view1{
         width: 100%;
+        padding: 1rem;
         @include flex-center(1rem);
         background-color: rgb(21, 20, 20);
         border-radius: 1rem;
@@ -89,6 +95,26 @@ main{
             }
         }
         }
+        .view2{
+            width: 100%;
+           @include flex-center();
+            align-items: center;
+           .top{
+                @include new();
+                .element{
+                    padding:1.5rem
+                    
+                }
+           }
+           .bottom{
+             @include new();
+             .element{
+                    padding:1rem
+                    
+                }
+           }
+         
+        }
     }
   @media (min-width:900px) {
     main{
@@ -123,6 +149,16 @@ main{
                     }
                 }
             }
+        }
+        .view2{
+            width: 100%;
+            flex-direction: row;
+                       
+             .top,
+             .bottom{
+                width: 50%;
+                justify-content: space-around;
+             }
         }
     }
     }
