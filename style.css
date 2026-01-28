@@ -109,34 +109,149 @@ main .view2 .top {
   flex-direction: row;
 }
 main .view2 .top .element {
-  padding: 2rem;
+  gap: 2rem;
+  padding: 2.4rem;
 }
 main .view2 .top .element small {
-  font-size: 0.8em;
+  font-size: 0.8rem;
   font-family: myfont1;
 }
 main .view2 .top .element h1 {
-  font-size: 2.3rem;
+  font-size: 2rem;
 }
 main .view2 .bottom {
   display: flex;
   flex-direction: row;
 }
 main .view2 .bottom .element {
-  padding: 2rem;
+  gap: 2rem;
+  padding: 2.4rem;
 }
 main .view2 .bottom .element small {
-  font-size: 0.8em;
+  font-size: 0.8rem;
   font-family: myfont1;
 }
 main .view2 .bottom .element h1 {
   font-size: 2rem;
 }
+main .view3 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+main .view3 .top {
+  width: 100%;
+}
+main .view3 .top img {
+  width: 100%;
+  border-radius: 1rem;
+}
+main .view3 .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  background-color: rgb(28, 27, 27);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+main .view3 .bottom p {
+  font-size: 1.1rem;
+  font-family: myfont1;
+  font-weight: 400;
+  opacity: 0.8;
+}
+main .view3 .bottom .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+main .view3 .bottom .text h1 {
+  text-transform: uppercase;
+  font-weight: 200;
+  font-family: myfont3;
+  font-size: 2.4rem;
+}
+main .view3 .bottom .text .paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+}
+main .view3 .bottom .text .paragraph p {
+  font-size: 1.2rem;
+  font-weight: 550;
+  line-height: 1.6;
+  opacity: 0.6;
+  font-family: myfont2;
+}
+main .view4 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+main .view4 .top {
+  width: 100%;
+}
+main .view4 .top img {
+  width: 100%;
+  border-radius: 1rem;
+}
+main .view4 .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  background-color: rgb(28, 27, 27);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+main .view4 .bottom p {
+  font-size: 1.1rem;
+  font-family: myfont1;
+  font-weight: 400;
+  opacity: 0.8;
+}
+main .view4 .bottom .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+main .view4 .bottom .text h1 {
+  text-transform: uppercase;
+  font-weight: 200;
+  font-family: myfont3;
+  font-size: 2.4rem;
+}
+main .view4 .bottom .text .paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+}
+main .view4 .bottom .text .paragraph p {
+  font-size: 1.2rem;
+  font-weight: 550;
+  line-height: 1.6;
+  opacity: 0.6;
+  font-family: myfont2;
+}
+main .view5 {
+  padding: 1rem;
+}
+main .view5 h1 {
+  font-size: 1.5rem;
+  font-family: myfont2;
+  font-weight: 500;
+}
+main .view5 .card {
+  width: 100%;
+  background-image: url("https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbd7d003dfb6a1bdecb_team-01-p-800.webp");
+  background-size: cover;
+  aspect-ratio: 1/1;
+}
 
 @media (min-width: 900px) {
   main .view1 {
     flex-direction: row;
-    padding: 1rem 4rem;
     align-items: stretch;
   }
   main .view1 .top,
@@ -180,5 +295,64 @@ main .view2 .bottom .element h1 {
   main .view2 .top .element h1,
   main .view2 .bottom .element h1 {
     font-size: 4rem;
+    font-family: myfont2;
+  }
+  main .view3 {
+    flex-direction: row-reverse;
+    gap: 1rem;
+  }
+  main .view3 .top,
+  main .view3 .bottom {
+    width: 50%;
+  }
+  main .view3 .bottom {
+    justify-content: space-between;
+    padding: 3.5rem;
+  }
+  main .view3 .bottom .text {
+    gap: 1.5rem;
+  }
+  main .view3 .bottom .text h1 {
+    width: 90%;
+    font-size: 3.1rem;
+  }
+  main .view3 .bottom .text .paragraph {
+    flex-direction: row;
+    width: 100%;
+    gap: 1rem;
+  }
+  main .view3 .bottom .text .paragraph p {
+    width: 70%;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+  main .view4 {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  main .view4 .top,
+  main .view4 .bottom {
+    width: 50%;
+  }
+  main .view4 .bottom {
+    justify-content: space-between;
+    padding: 3.5rem;
+  }
+  main .view4 .bottom .text {
+    gap: 1.5rem;
+  }
+  main .view4 .bottom .text h1 {
+    width: 90%;
+    font-size: 3.1rem;
+  }
+  main .view4 .bottom .text .paragraph {
+    flex-direction: row;
+    width: 100%;
+    gap: 1rem;
+  }
+  main .view4 .bottom .text .paragraph p {
+    width: 70%;
+    font-size: 1.5rem;
+    line-height: 1.5;
   }
 }/*# sourceMappingURL=style.css.map */
