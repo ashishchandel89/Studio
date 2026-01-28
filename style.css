@@ -109,14 +109,28 @@ main .view2 .top {
   flex-direction: row;
 }
 main .view2 .top .element {
-  padding: 1.5rem;
+  padding: 2rem;
+}
+main .view2 .top .element small {
+  font-size: 0.8em;
+  font-family: myfont1;
+}
+main .view2 .top .element h1 {
+  font-size: 2.3rem;
 }
 main .view2 .bottom {
   display: flex;
   flex-direction: row;
 }
 main .view2 .bottom .element {
-  padding: 1rem;
+  padding: 2rem;
+}
+main .view2 .bottom .element small {
+  font-size: 0.8em;
+  font-family: myfont1;
+}
+main .view2 .bottom .element h1 {
+  font-size: 2rem;
 }
 
 @media (min-width: 900px) {
@@ -152,5 +166,19 @@ main .view2 .bottom .element {
   main .view2 .bottom {
     width: 50%;
     justify-content: space-around;
+  }
+  main .view2 .top .element,
+  main .view2 .bottom .element {
+    padding: 5rem;
+  }
+  main .view2 .top .element small,
+  main .view2 .bottom .element small {
+    font-family: myfont1;
+    font-size: 1rem;
+    padding-left: 0.8rem;
+  }
+  main .view2 .top .element h1,
+  main .view2 .bottom .element h1 {
+    font-size: 4rem;
   }
 }/*# sourceMappingURL=style.css.map */
