@@ -232,10 +232,12 @@ main{
         }
         .view5{
             padding: 1rem;
+            @include flex-center();
             h1{
-                font-size: 1.5rem;
+                font-size: 2rem;
                 font-family: myfont2;
                 font-weight: 500;
+
             }
            .card{
             width: 100%;
