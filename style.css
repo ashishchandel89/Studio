@@ -1,6 +1,6 @@
 * {
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -73,13 +73,15 @@ main .view1 .bottom p {
 main .view1 .bottom .text {
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  gap: 1rem;
 }
 main .view1 .bottom .text h1 {
   text-transform: uppercase;
   font-weight: 200;
   font-family: myfont3;
-  font-size: 3rem;
+  font-size: 2.7rem;
+  text-align: left;
+  padding: 0;
 }
 main .view1 .bottom .text p {
   font-size: 1.5rem;
@@ -109,7 +111,6 @@ main .view2 .top {
 }
 main .view2 .top .element {
   gap: 2rem;
-  padding: 2.4rem;
 }
 main .view2 .top .element small {
   font-size: 0.8rem;
@@ -124,7 +125,6 @@ main .view2 .bottom {
 }
 main .view2 .bottom .element {
   gap: 2rem;
-  padding: 2.4rem;
 }
 main .view2 .bottom .element small {
   font-size: 0.8rem;
@@ -163,13 +163,15 @@ main .view3 .bottom p {
 main .view3 .bottom .text {
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  gap: 1rem;
 }
 main .view3 .bottom .text h1 {
   text-transform: uppercase;
   font-weight: 200;
   font-family: myfont3;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
+  text-align: left;
+  padding: 0;
 }
 main .view3 .bottom .text .paragraph {
   display: flex;
@@ -213,13 +215,15 @@ main .view4 .bottom p {
 main .view4 .bottom .text {
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  gap: 1rem;
 }
 main .view4 .bottom .text h1 {
   text-transform: uppercase;
   font-weight: 200;
   font-family: myfont3;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
+  text-align: left;
+  padding: 0;
 }
 main .view4 .bottom .text .paragraph {
   display: flex;
@@ -282,22 +286,22 @@ main .view5 .card1 .top .icon i {
 }
 main .view5 .card1 .bottom {
   width: 100%;
-  background-color: rgba(187, 187, 187, 0.066);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  background-color: rgba(187, 187, 187, 0.133);
+  -webkit-backdrop-filter: blur(22px);
+          backdrop-filter: blur(22px);
   border-radius: 0.7rem;
-  border: 0.7px solid white;
-  padding: 1.6rem;
+  border: 1px solid rgba(255, 255, 255, 0.278);
+  padding: 1rem 0.8rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-main .view5 .card1 .bottom h1 {
-  font-size: 1.3rem;
-  font-family: myfont2;
-  font-weight: 700;
-}
 main .view5 .card1 .bottom h2 {
+  font-size: 1.4rem;
+  font-family: myfont2;
+  font-weight: 800;
+}
+main .view5 .card1 .bottom h3 {
   font-size: 1rem;
   font-family: myfont1;
 }
@@ -336,22 +340,22 @@ main .view5 .card2 .top .icon i {
 }
 main .view5 .card2 .bottom {
   width: 100%;
-  background-color: rgba(187, 187, 187, 0.066);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  background-color: rgba(187, 187, 187, 0.133);
+  -webkit-backdrop-filter: blur(22px);
+          backdrop-filter: blur(22px);
   border-radius: 0.7rem;
-  border: 0.7px solid white;
-  padding: 1.6rem;
+  border: 1px solid rgba(255, 255, 255, 0.278);
+  padding: 1rem 0.8rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-main .view5 .card2 .bottom h1 {
-  font-size: 1.3rem;
-  font-family: myfont2;
-  font-weight: 700;
-}
 main .view5 .card2 .bottom h2 {
+  font-size: 1.4rem;
+  font-family: myfont2;
+  font-weight: 800;
+}
+main .view5 .card2 .bottom h3 {
   font-size: 1rem;
   font-family: myfont1;
 }
@@ -390,24 +394,74 @@ main .view5 .card3 .top .icon i {
 }
 main .view5 .card3 .bottom {
   width: 100%;
-  background-color: rgba(187, 187, 187, 0.066);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  background-color: rgba(187, 187, 187, 0.133);
+  -webkit-backdrop-filter: blur(22px);
+          backdrop-filter: blur(22px);
   border-radius: 0.7rem;
-  border: 0.7px solid white;
-  padding: 1.6rem;
+  border: 1px solid rgba(255, 255, 255, 0.278);
+  padding: 1rem 0.8rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-main .view5 .card3 .bottom h1 {
-  font-size: 1.3rem;
-  font-family: myfont2;
-  font-weight: 700;
-}
 main .view5 .card3 .bottom h2 {
+  font-size: 1.4rem;
+  font-family: myfont2;
+  font-weight: 800;
+}
+main .view5 .card3 .bottom h3 {
   font-size: 1rem;
   font-family: myfont1;
+}
+main .view6 {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  border-radius: 1rem;
+}
+main .view6 .top {
+  width: 100%;
+}
+main .view6 .top img {
+  width: 100%;
+  border-radius: 1rem;
+}
+main .view6 .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: rgb(28, 27, 27);
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+main .view6 .bottom p {
+  font-size: 1rem;
+  font-family: myfont1;
+  opacity: 0.7;
+}
+main .view6 .bottom .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .view6 .bottom .text h1 {
+  text-transform: uppercase;
+  font-weight: 200;
+  font-family: myfont3;
+  font-size: 2.4rem;
+  text-align: left;
+  padding: 0rem;
+  padding-bottom: 2rem;
+}
+main .view6 .bottom .text button {
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+  outline: none;
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
 }
 
 @media (min-width: 900px) {
@@ -518,5 +572,129 @@ main .view5 .card3 .bottom h2 {
   }
   main .view5 {
     flex-direction: row;
+  }
+  main .view5 .card1 .bottom {
+    padding: 2rem 1.8rem;
+  }
+  main .view5 .card1 .bottom h2 {
+    font-size: 2rem;
+    font-family: myfont2;
+    font-weight: 800;
+  }
+  main .view5 .card1 .bottom h3 {
+    font-size: 1.5rem;
+    font-family: myfont1;
+  }
+  main .view5 .card2 .bottom {
+    padding: 2rem 1.8rem;
+  }
+  main .view5 .card2 .bottom h2 {
+    font-size: 2rem;
+    font-family: myfont2;
+    font-weight: 800;
+  }
+  main .view5 .card2 .bottom h3 {
+    font-size: 1.5rem;
+    font-family: myfont1;
+  }
+  main .view5 .card3 .bottom {
+    padding: 2rem 1.8rem;
+  }
+  main .view5 .card3 .bottom h2 {
+    font-size: 2rem;
+    font-family: myfont2;
+    font-weight: 800;
+  }
+  main .view5 .card3 .bottom h3 {
+    font-size: 1.5rem;
+    font-family: myfont1;
+  }
+  main .view6 {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: stretch;
+  }
+  main .view6 .top,
+  main .view6 .bottom {
+    width: 50%;
+  }
+  main .view6 .bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    justify-content: center;
+  }
+  main .view6 .bottom p {
+    font-size: 1rem;
+    font-family: myfont1;
+    opacity: 0.7;
+  }
+  main .view6 .bottom .text {
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+    justify-content: space-between;
+  }
+  main .view6 .bottom .text h1 {
+    width: 100%;
+    font-size: 3.8rem;
+  }
+  main .view6 .bottom .text button {
+    padding: 1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 900px) {
+  main .view1 .bottom {
+    justify-content: space-between;
+    padding: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+  }
+  main .view1 .bottom .text {
+    gap: 1.5rem;
+  }
+  main .view1 .bottom .text h1 {
+    width: 90%;
+    font-size: 3.8rem;
+  }
+  main .view1 .bottom .text p {
+    width: 90%;
+    font-size: 1.3rem;
+  }
+  main .view2 {
+    flex-direction: column;
+  }
+  main .view3 .bottom {
+    justify-content: space-between;
+    padding: 3.5rem;
+    width: 100%;
+  }
+  main .view3 .bottom .text {
+    gap: 1.5rem;
+  }
+  main .view3 .bottom .text h1 {
+    width: 90%;
+    font-size: 3.1rem;
+  }
+  main .view3 .bottom .text .paragraph {
+    flex-direction: row;
+    width: 100%;
+    gap: 1rem;
+  }
+  main .view3 .bottom .text .paragraph p {
+    width: 70%;
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  main .view4 {
+    flex-direction: column;
+  }
+  main .view6 {
+    flex-direction: column;
+  }
+  main .view5 {
+    flex-wrap: wrap;
   }
 }/*# sourceMappingURL=style.css.map */

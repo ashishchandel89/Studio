@@ -1,6 +1,6 @@
 *{
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 html,
@@ -70,12 +70,14 @@ main{
                 }
             
             .text{
-                  @include flex-center(0.6rem);
+                  @include flex-center(1rem);
                 h1{
                     text-transform: uppercase;
                     font-weight: 200;
                     font-family: myfont3;
-                    font-size: 3rem;
+                    font-size: 2.7rem;
+                    text-align: left;
+                    padding: 0;
                 }
                 p{
                     font-size: 1.5rem;
@@ -102,7 +104,7 @@ main{
                 @include new();
                 .element{
                     gap:2rem;
-                    padding: 2.4rem;
+                    
                    
                     small{
                         font-size: 0.8rem;
@@ -120,7 +122,7 @@ main{
              @include new();
              .element{
                     gap:2rem;
-                    padding: 2.4rem;
+                   
                     small{
                         font-size: 0.8rem;
                         font-family: myfont1;
@@ -161,12 +163,14 @@ main{
                 }
             
             .text{
-                  @include flex-center(0.6rem);
+                    @include flex-center(1rem);
                 h1{
                     text-transform: uppercase;
                     font-weight: 200;
                     font-family: myfont3;
-                    font-size: 2.4rem;
+                    font-size: 2.2rem;
+                    text-align: left;
+                    padding: 0;
                 }
                 .paragraph{
                     @include flex-center();
@@ -209,12 +213,14 @@ main{
                 }
             
             .text{
-                  @include flex-center(0.6rem);
+                    @include flex-center(1rem);
                 h1{
                     text-transform: uppercase;
                     font-weight: 200;
                     font-family: myfont3;
-                    font-size: 2.4rem;
+                    font-size: 2.2rem;
+                    text-align: left;
+                    padding: 0;
                 }
                 .paragraph{
                     @include flex-center();
@@ -230,20 +236,18 @@ main{
             }
         }
         }
-        
-             h1{
+        h1{
                 width: 100%;
                 font-size: 2rem;
                 font-family: myfont3;
                 font-weight: 400;
                 padding: 2rem;
 
-            }
+        }
         .view5{
             width: 100%;
             padding: 1rem ; 
             @include flex-center(2rem);
-           
             .card1{ 
                 width: 100%;
                
@@ -274,26 +278,27 @@ main{
                         }
                     }
                 }        
-                .bottom{
+                 .bottom{
                     width: 100%;
-                    background-color: rgba(187, 187, 187, 0.066);
-                    backdrop-filter: blur(10px);
+                    background-color: rgba(187, 187, 187, 0.133);
+                    backdrop-filter: blur(22px);
                     border-radius: 0.7rem;
-                    border: 0.7px solid white;
-                    padding: 1.6rem;
+                    border: 1px solid rgba(255, 255, 255, 0.278);
+                    padding: 1rem 0.8rem;
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
-                    h1{
-                        font-size: 1.3rem;
-                        font-family: myfont2;
-                        font-weight: 700;
-                    }
                     h2{
+                        font-size: 1.4rem;
+                        font-family: myfont2;
+                     
+                        font-weight: 800;
+                    }
+                    h3{
                         font-size: 1rem;
                         font-family: myfont1;
                     }
-                }    
+                }      
             }
             .card2{ 
                 width: 100%;
@@ -325,26 +330,27 @@ main{
                         }
                     }
                 }        
-                .bottom{
+                 .bottom{
                     width: 100%;
-                    background-color: rgba(187, 187, 187, 0.066);
-                    backdrop-filter: blur(10px);
+                    background-color: rgba(187, 187, 187, 0.133);
+                    backdrop-filter: blur(22px);
                     border-radius: 0.7rem;
-                    border: 0.7px solid white;
-                    padding: 1.6rem;
+                    border: 1px solid rgba(255, 255, 255, 0.278);
+                    padding: 1rem 0.8rem;
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
-                    h1{
-                        font-size: 1.3rem;
-                        font-family: myfont2;
-                        font-weight: 700;
-                    }
                     h2{
+                        font-size: 1.4rem;
+                        font-family: myfont2;
+                     
+                        font-weight: 800;
+                    }
+                    h3{
                         font-size: 1rem;
                         font-family: myfont1;
                     }
-                }    
+                }        
             }
             .card3{ 
                 width: 100%;
@@ -378,20 +384,21 @@ main{
                 }        
                 .bottom{
                     width: 100%;
-                    background-color: rgba(187, 187, 187, 0.066);
-                    backdrop-filter: blur(10px);
+                    background-color: rgba(187, 187, 187, 0.133);
+                    backdrop-filter: blur(22px);
                     border-radius: 0.7rem;
-                    border: 0.7px solid white;
-                    padding: 1.6rem;
+                    border: 1px solid rgba(255, 255, 255, 0.278);
+                    padding: 1rem 0.8rem;
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
-                    h1{
-                        font-size: 1.3rem;
-                        font-family: myfont2;
-                        font-weight: 700;
-                    }
                     h2{
+                        font-size: 1.4rem;
+                        font-family: myfont2;
+                     
+                        font-weight: 800;
+                    }
+                    h3{
                         font-size: 1rem;
                         font-family: myfont1;
                     }
@@ -399,9 +406,54 @@ main{
             }
 
         }
+         .view6{
+        width: 100%;
+        padding: 1rem;
+        @include flex-center(0.2rem);
+        border-radius: 1rem;
+        .top{
+            width: 100%;
+            img{
+                width: 100%;
+                border-radius: 1rem;
+            }
+        }
+        .bottom{
+            
+           @include flex-center(1rem);
+            background-color: rgb(28, 27, 27);
+            padding: 1.5rem;
+            border-radius: 1rem;
+                p{
+                    font-size: 1rem;
+                    font-family: myfont1;
+                    opacity: 0.7;
+                }
+            
+            .text{
+                  @include flex-center(1rem);
+                h1{
+                    text-transform: uppercase;
+                    font-weight: 200;
+                    font-family: myfont3;
+                    font-size: 2.4rem;
+                    text-align: left;
+                    padding: 0rem ;
+                    padding-bottom: 2rem;
+                }
+                button{
+                   width: fit-content;
+                    border: none;
+                    outline: none;
+                    padding: 0.7rem 1rem;
+                    border-radius: 0.5rem;
+                }
+            }
+        }
+        }
     }
     
-  @media (min-width:900px) {
+  @media (min-width:900px) {        
     main{
         
         .view1{
@@ -525,9 +577,166 @@ main{
         }
         .view5{
             flex-direction: row;
+            .card1{
+                 .bottom{
+                    
+                    padding: 2rem 1.8rem;
+                   
+                    h2{
+                        font-size: 2rem;
+                        font-family: myfont2;
+                     
+                        font-weight: 800;
+                    }
+                    h3{
+                        font-size: 1.5rem;
+                        font-family: myfont1;
+                    }
+                }    
+            }
+
+              .card2{
+                 .bottom{
+                    
+                    padding: 2rem 1.8rem;
+                   
+                    h2{
+                        font-size: 2rem;
+                        font-family: myfont2;
+                     
+                        font-weight: 800;
+                    }
+                    h3{
+                        font-size: 1.5rem;
+                        font-family: myfont1;
+                    }
+                }    
+            }
+              .card3{
+                 .bottom{
+                    
+                    padding: 2rem 1.8rem;
+                   
+                    h2{
+                        font-size: 2rem;
+                        font-family: myfont2;
+                     
+                        font-weight: 800;
+                    }
+                    h3{
+                        font-size: 1.5rem;
+                        font-family: myfont1;
+                    }
+                }    
+            }
         }
+        .view6{
+            @include new();
+            gap: 1rem;
+            align-items: stretch; 
+            .top,
+            .bottom{
+                width: 50%;
+            }
+            .bottom{
+                @include flex-center(0.7rem);
+                justify-content: center;
+                 p{
+                    font-size: 1rem;
+                    font-family: myfont1;
+                    opacity: 0.7;
+                }
+                .text{
+                    @include flex-center(7rem);
+                    justify-content: space-between;
+                   
+                    h1{
+                        width: 100%;
+                        font-size:3.8rem;
+                        
+                    }
+                    button{
+                        padding: 1rem;
+                    }
+                     
+                }
+            }
+        }
+        
     }
     }
+
+    @media (min-width:768px) and (max-width:900px){
+    main{
+
+        .view1{
+           
+             .bottom{
+                justify-content: space-between;
+                padding:3.5rem;
+                @include flex-center(8rem);
+
+                .text{
+
+                    gap:1.5rem;
+
+                    h1{
+                        width: 90%;
+                        font-size:3.8rem;
+                    }
+                     p {
+                        width: 90%;
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+
+        .view2{
+            flex-direction: column;
+        }
+
+        .view3{
+           .bottom{
+                justify-content: space-between;
+                padding:3.5rem;
+                width: 100%;
+                .text{
+                    gap:1.5rem;
+                 h1{                                // yha choda tha
+                        width: 90%;
+                        font-size:3.1rem;
+                    }
+                    .paragraph{
+                        flex-direction: row;
+                        width: 100%;
+                        gap: 1rem;
+                      p {
+                        width: 70%;
+                        font-size: 1.2rem;
+                        line-height: 1.5;
+                       
+                    }
+                }
+                }
+            }
+        }
+
+        .view4{
+            flex-direction: column;
+        }
+
+        .view6{
+            flex-direction: column;
+        }
+
+        .view5{
+            flex-wrap: wrap;
+        }
+
+    }
+}
+
 
     
 
